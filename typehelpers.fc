@@ -1,0 +1,19 @@
+forall X -> (tuple, X) ~tpop(tuple t) asm "TPOP";
+int tuple_length(tuple t) asm "TLEN";
+forall X -> int is_null(X x) asm "ISNULL";
+forall X -> int is_int(X x) asm "<{ TRY:<{ 0 PUSHINT ADD DROP -1 PUSHINT }>CATCH<{ 2DROP 0 PUSHINT }> }>CONT 1 1 CALLXARGS";
+forall X -> int is_cell(X x) asm "<{ TRY:<{ CTOS DROP -1 PUSHINT }>CATCH<{ 2DROP 0 PUSHINT }> }>CONT 1 1 CALLXARGS";
+forall X -> int is_slice(X x) asm "<{ TRY:<{ SBITS DROP -1 PUSHINT }>CATCH<{ 2DROP 0 PUSHINT }> }>CONT 1 1 CALLXARGS";
+forall X -> int is_tuple(X x) asm "ISTUPLE";
+forall X -> cell force_cast_to_cell(X x) asm "NOP";
+forall X -> slice force_cast_to_slice(X x) asm "NOP";
+forall X -> int force_cast_to_int(X x) asm "NOP";
+forall X -> tuple force_cast_to_tuple(X x) asm "NOP";
+;; Some other helpers
+forall X -> tuple unsafe_tuple(X x) asm "NOP";
+cell get_c5() asm "c5 PUSH";
+builder store_builder(builder to, builder from) asm "STBR";
+() set_lib_code(cell library, int x) impure asm "SETLIBCODE";
+() change_lib(int lib_hash, int x) impure asm "CHANGELIB";
+builder store_coins(builder b, int x) asm "STVARUINT16";
+(slice, int) load_coins(slice s) asm( -> 1 0) "LDVARUINT16";

@@ -1,0 +1,16 @@
+{-
+
+  TASK 5 - Address encoder
+  Write the method that for any valid MsgAddressInt with addr_std constructor
+  without anycast
+  (see https://github.com/ton-blockchain/ton/blob/master/crypto/block/block.tlb#L105)
+ returns the slice that contain ASCII encoded base64url user-friendly bouncable
+ address (without test-only flag), see https://ton.org/docs/#/howto/step-by-step?id=_1-smart-contract-addresses
+-}
+
+() recv_internal() {
+}
+
+;; testable
+(slice) encode_address(slice Address) method_id {
+}

@@ -1,0 +1,25 @@
+{-
+
+  TASK 3 - Message validation.
+  Write the method that checks that cell contains valid message
+  in accordance to https://github.com/ton-blockchain/ton/blob/master/crypto/block/block.tlb#L155
+  Note, tests will only cover valid and invalid MessageAny objects,
+  valid MessageRelaxed (which are not simultaneously MessageAny) will not be presented
+  If message is invalid for any reason - method should return (0, null), otherwise
+  it should return (-1, [slice src, slice dest, int amount] ), where src, dest and
+  amount represents source of the message, destination of the message and attached
+  amount of TONs. If any of those values are not presented (or presented as
+  addr_none slice) in the message cell - they should be substituted with null.
+  It is guaranteed that for all tests any HashmapE datatype in message structure
+  is empty hashmaps (has hme_empty constructor).
+  Documentation on TL-B schemes can be found in https://ton.org/docs/#/overviews/TL-B
+-}
+
+() recv_internal() {
+}
+
+
+;; testable
+(int, tuple) validate_message(cell message) method_id {
+  return (-1, unsafe_tuple([null(), null(), 0]));
+}
