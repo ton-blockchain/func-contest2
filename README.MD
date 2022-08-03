@@ -55,7 +55,7 @@ Examples of standard smart contracts can be found [here](https://github.com/newt
 
 Developer Chats - [@tondev_eng](https://t.me/tondev_eng), [@tondev](https://t.me/tondev).
 
-FunC studying chats - [@ton_learn](https://t.me/ton_learn), [@ton_learn](https://t.me/ton_learn)
+FunC studying chat - [@ton_learn](https://t.me/ton_learn).
 
 Introduction and tutorials are available here: https://ton.org/docs/#/func/overview
 
