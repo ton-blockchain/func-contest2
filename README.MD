@@ -20,6 +20,8 @@ We ask participants not to change the signature (number, order, and types of arg
 
 ## How to submit
 
+Tasks are expected to be submitted through [@toncontests_bot](https://t.me/toncontests_bot).
+
 Solutions should be submitted as a zip archive that contains up to 6 files labeled `1.fc`, `2.fc`, `3.fc`, `4.fc`, `5.fc` (each file representing a corresponding task), and `participant.json`. 
 
 Each file will be compiled with func from the [main repository](https://github.com/ton-blockchain/ton/tree/master/crypto/func). 
