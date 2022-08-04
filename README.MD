@@ -53,7 +53,7 @@ We recommend participants check out https://ton.org/docs in particular "Basic co
 
 Additional and detailed information is available in the [whitepapers](https://ton.org/docs/#/docs).
 
-Examples of standard smart contracts can be found [here](https://github.com/newton-blockchain/ton/tree/master/crypto/smartcont).
+Examples of standard smart contracts can be found [here](https://github.com/ton-blockchain/ton/tree/master/crypto/smartcont).
 
 Developer Chats - [@tondev_eng](https://t.me/tondev_eng), [@tondev](https://t.me/tondev).
 
